@@ -60,7 +60,7 @@ Objectives for shopping cart project:
 /*
 Top level structure:
   - Home page
-  - Shop page - COntains simple cards with click through to param card page
-  - Item page - dynamic routing with params
+  - Shop page - Contains simple cards with click through to relevant card page
+  - Item page - dynamic routing with individual item parameter
   - Cart
 */

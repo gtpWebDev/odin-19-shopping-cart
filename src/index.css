@@ -1,18 +1,82 @@
+/* The beginnings of a house style template */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5; /* Not checked */
   font-weight: 400;
+  font-style: normal;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --site-background-color: #f1f1f1;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --header-font-color: #757575;
+  --std-font-color: #000;
+
+  color: var(--std-font-color);
+  background-color: var(--site-background-color);
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--header-font-color);
+  line-height: 1.1; /* check */
+  margin: 5px 5px;
+}
+
+/* this is applied in main.jsx at the highest level */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  row-gap: 30px;
+}
+
+/* header {
+  border: 4px double black;
+  background-color: aliceblue;
+  font-size: 30px;
+}
+
+nav {
+  border: 4px double black;
+  background-color: darkgray;
+}
+
+main {
+  border: 4px double black;
+  background-color: burlywood;
+} */
+
+/*
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,13 +86,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
 h1 {
   font-size: 3.2em;
@@ -66,3 +123,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/

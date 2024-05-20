@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import { Outlet, Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
@@ -6,18 +6,22 @@ import PropTypes from "prop-types";
 function App() {
   return (
     <>
-      <header>Shopping Cart</header>
-      <nav>
-        <p>Nav Bar</p>
+      <header className={styles.container}>
+        <h1>Shopping Cart</h1>
+      </header>
+      <nav className={styles.container}>
+        <p>
+          <i>Nav Bar</i>
+        </p>
         <Link to={"shop"}>Shop link</Link>
         <br />
         <Link to={"cart"}>Cart link</Link>
         <p>Cart Items and Price</p>
       </nav>
-      <main>
+      <main className={styles.container}>
         <Outlet />
       </main>
-      <footer>Footer</footer>
+      <footer className={styles.container}>Footer</footer>
     </>
   );
 
